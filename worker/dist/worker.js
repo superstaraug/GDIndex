@@ -1,15 +1,22 @@
 self.props = {
-	title: 'GDIndex',
-	default_root_id: 'root',
+	title: '', //网站Title
+	default_root_id: '', //留空
+    rootIds: JSON.stringify([{
+    "text": "", //第一个网盘名称
+    "value": "" //第一个网盘rootID
+}, {
+    "text": "", //第二个网盘名称
+    "value": "" //第二个网盘rootID
+}]),
 	client_id: '202264815644.apps.googleusercontent.com',
 	client_secret: 'X4Z3ca8xfWDb1Voo-F9a7ZxJ',
 	refresh_token: '',
-	auth: false,
+	auth: true,
 	user: '',
 	pass: '',
 	upload: false,
-    export_url: false,
-    download_aria2: false,
+    export_url: true,
+    download_aria2: true,
     copy_on_forbidden: false,
     copy_parent_id: ''
 };
@@ -490,7 +497,7 @@ self.props = {
   }
 
   const gd = new GoogleDrive(self.props);
-  const resourceBaseUrl = self.props.resource_base_url || 'https://raw.githubusercontent.com/CodeingBoy/GDIndex/master/web/dist/';
+  const resourceBaseUrl = self.props.resource_base_url || 'https://raw.githubusercontent.com/superstaraug/GDIndex/master/web/dist/';
   const HTML = `
 <!DOCTYPE html>
 <html lang=en>
@@ -503,7 +510,8 @@ self.props = {
 <body>
 <script>window.props = { 
 	title: '${self.props.title}', default_root_id: '${self.props.default_root_id}', 
-	api: location.protocol + '//' + location.host, 
+	rootIds: '${self.props.rootIds}',
+  api: location.protocol + '//' + location.host, 
 	upload: ${self.props.upload},
 	export_url: ${self.props.export_url},
 	download_aria2: ${self.props.download_aria2}
