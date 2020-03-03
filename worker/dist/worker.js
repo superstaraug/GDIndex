@@ -1,6 +1,6 @@
 self.props = {
 	title: '', //网站Title
-	default_root_id: '', //留空
+	default_root_id: '', //填写第一个共享的id
     rootIds: JSON.stringify([{
     "text": "", //Nmae for the first team drive or shared folder
     "value": "" //RootID for the first team drive or shared folder
