@@ -2,11 +2,13 @@ self.props = {
 	title: '', //网站Title
 	default_root_id: '', //留空
     rootIds: JSON.stringify([{
-    "text": "", //第一个网盘名称
-    "value": "" //第一个网盘rootID
+    "text": "", //Nmae for the first team drive or shared folder
+    "value": "" //RootID for the first team drive or shared folder
 }, {
-    "text": "", //第二个网盘名称
-    "value": "" //第二个网盘rootID
+    "text": "", //Nmae for the second team drive or shared folder
+    "value": "" //RootID for the second team drive or shared folder
+	//You can copy "text" and "value" line below, to creat more team drive or shared folder
+	
 }]),
 	client_id: '202264815644.apps.googleusercontent.com',
 	client_secret: 'X4Z3ca8xfWDb1Voo-F9a7ZxJ',
