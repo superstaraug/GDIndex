@@ -13,12 +13,12 @@ self.props = {
 	client_id: '202264815644.apps.googleusercontent.com',
 	client_secret: 'X4Z3ca8xfWDb1Voo-F9a7ZxJ',
 	refresh_token: '',
-	auth: true,
+	auth: false,
 	user: '',
 	pass: '',
 	upload: false,
-    export_url: true,
-    download_aria2: true,
+    export_url: false,
+    download_aria2: false,
     copy_on_forbidden: false,
     copy_parent_id: ''
 };
