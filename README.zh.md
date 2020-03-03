@@ -30,6 +30,12 @@
 6. 在脚本顶端填上 `refresh_token`, `root_folder_id` 以及其他的选项
 7. 部署!
 
+或
+
+1. 访问 [Albany MOD](https://gdindex-albanymod-builder.glitch.me/)
+2. 根据网站提示生成CF Workers的代码
+3. 将生成的代码复制到Workers项目
+
 ### 启用文件下载链接导出
 
 1. 在 `worker.js` 中添加:
